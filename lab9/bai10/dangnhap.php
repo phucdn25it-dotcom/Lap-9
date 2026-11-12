@@ -1,0 +1,3 @@
+<?php require '../includes/app.php'; page('Bài 10 · Đăng nhập'); if(isset($_GET['error'])) notice('Tên đăng nhập hoặc mật khẩu không đúng.'); if(isset($_GET['required'])) notice('Bạn chưa đăng nhập. Vui lòng đăng nhập để mở trang quản trị.'); ?>
+<p>Tài khoản thực hành: <strong>admin / admin123</strong></p><form method="post" action="dangnhap_xuly.php"><?php csrf(); ?><label>Username <input name="username" required autocomplete="username" value="<?= e($_COOKIE['lab9_username']??'') ?>"></label><label>Password <input name="password" type="password" required autocomplete="current-password"></label><label><input name="remember" type="checkbox"> Ghi nhớ tên đăng nhập</label><button>Đăng nhập</button><a href="index.php">Hủy</a></form>
+<?php endpage(); ?>

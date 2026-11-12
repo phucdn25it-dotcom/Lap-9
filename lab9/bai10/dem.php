@@ -1,0 +1,1 @@
+<?php require '../includes/app.php'; $_SESSION['count']=($_SESSION['count']??0)+1; page('Bài 10 · Bộ đếm SESSION'); notice('Số lượt mở trang đếm trong phiên: '.$_SESSION['count']); ?><a href="tang.php">Next →</a><?php endpage(); ?>

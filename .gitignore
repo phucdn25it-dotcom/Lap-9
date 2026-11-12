@@ -1,0 +1,7 @@
+# User uploads and local runtime data
+lab9/bai9/uploads/*
+!lab9/bai9/uploads/.htaccess
+*.log
+.env
+.DS_Store
+Thumbs.db
